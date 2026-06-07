@@ -1,0 +1,95 @@
+<style>
+  .mode-landscape .sl-outer {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .mode-portrait .sl-outer {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-problem {
+    width: 50%;
+    border-right: 1px solid #e2e8f0;
+  }
+  .mode-landscape .sl-solution {
+    width: 50%;
+  }
+  .mode-portrait .sl-problem,
+  .mode-portrait .sl-solution {
+    width: 100%;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="inline-block text-xs font-semibold tracking-widest uppercase text-amber-600 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-3">The Case for Change</span>
+      <h2 class="text-4xl font-black text-slate-900 leading-tight">Why Coffee Shops Need<br>a Smarter Operating System</h2>
+    </div>
+
+    <!-- Split panels -->
+    <div class="sl-outer flex flex-1 gap-8">
+
+      <!-- Problem -->
+      <div class="sl-problem flex flex-col gap-5 pr-8">
+        <div class="flex items-center gap-2 mb-1">
+          <div class="w-7 h-7 rounded-full bg-red-100 flex items-center justify-center">
+            <span class="text-red-600 font-bold text-sm">!</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800">The Problem</h3>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+            <p class="text-sm font-semibold text-red-700 mb-1">No live financial picture</p>
+            <p class="text-sm text-slate-600">Owners reconcile spreadsheets at month-end — by then, margins have already eroded and decisions are made on stale data.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+            <p class="text-sm font-semibold text-red-700 mb-1">Disconnected operations</p>
+            <p class="text-sm text-slate-600">POS, inventory, payroll, and purchasing live in separate tools. A single busy weekend can silently drain stock and profits.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+            <p class="text-sm font-semibold text-red-700 mb-1">Blind ROI on every cup</p>
+            <p class="text-sm text-slate-600">Without ingredient-level costing tied to sales, it's impossible to know which products actually make money.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-solution flex flex-col gap-5">
+        <div class="flex items-center gap-2 mb-1">
+          <div class="w-7 h-7 rounded-full bg-amber-100 flex items-center justify-center">
+            <span class="text-amber-700 font-bold text-sm">✓</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800">The Solution</h3>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <p class="text-sm font-semibold text-amber-800 mb-1">Real-time balance sheet</p>
+            <p class="text-sm text-slate-600">Every sale, stock movement, and labour cost posts instantly to a live P&amp;L — no reconciliation lag, no surprises.</p>
+          </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <p class="text-sm font-semibold text-amber-800 mb-1">One unified platform</p>
+            <p class="text-sm text-slate-600">POS cashier, stock control, employee management, and ROI tracking all integrated and speaking the same language.</p>
+          </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <p class="text-sm font-semibold text-amber-800 mb-1">Profitability per product</p>
+            <p class="text-sm text-slate-600">Track exact ROI per menu item — from bean cost to cup sold — so every pricing decision is backed by live data.</p>
+          </div>
+        </div>
+
+        <!-- Supporting visual -->
+        <div class="flex-1 rounded-xl overflow-hidden min-h-16">
+          <img
+            src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Clean%20financial%20dashboard%20on%20a%20laptop%20screen%20showing%20coffee%20shop%20metrics%2C%20minimal%20UI%2C%20amber%20and%20slate%20color%20palette%2C%20top-down%20flat%20lay%20photography"
+            alt="Coffee shop dashboard"
+            class="w-full h-full object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
