@@ -1,0 +1,1 @@
+i want an app that able to track my coffee shops ROI, stock control, barista and employee, and cashier POS monitoring integrated to my balance sheet in real time

@@ -1,0 +1,73 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: row;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-content-col {
+    width: 52%;
+    padding: 3rem 3rem 3rem 3.5rem;
+  }
+  .mode-landscape .sl-visual-col {
+    width: 48%;
+  }
+  .mode-portrait .sl-content-col {
+    width: 100%;
+    padding: 2.5rem 2rem 1.5rem 2rem;
+  }
+  .mode-portrait .sl-visual-col {
+    width: 100%;
+    flex: 1;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-content-col flex flex-col justify-between">
+      <!-- Top: category label -->
+      <div>
+        <span class="inline-block text-xs font-semibold tracking-widest uppercase text-amber-600 bg-amber-50 border border-amber-200 rounded-full px-3 py-1">Coffee Shop Intelligence</span>
+      </div>
+
+      <!-- Middle: headline + tagline -->
+      <div class="flex flex-col gap-5">
+        <h1 class="text-5xl font-black leading-tight text-slate-900">
+          Your Entire<br>
+          <span class="text-amber-600">Coffee Business,</span><br>
+          One Dashboard.
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed max-w-sm">
+          Real-time ROI tracking, stock control, barista &amp; employee management, and a POS cashier — all wired directly into your live balance sheet.
+        </p>
+
+        <!-- CTA pill -->
+        <div class="flex items-center gap-3 mt-2">
+          <span class="inline-block bg-amber-600 text-white text-sm font-semibold rounded-full px-5 py-2.5 tracking-wide">See How It Works</span>
+          <span class="text-slate-400 text-sm">Built for independent &amp; multi-outlet shops</span>
+        </div>
+      </div>
+
+      <!-- Bottom: attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual column -->
+    <div class="sl-visual-col relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Cozy%20specialty%20coffee%20shop%20interior%2C%20barista%20behind%20a%20sleek%20espresso%20bar%2C%20warm%20amber%20lighting%2C%20minimal%20modern%20design%2C%20editorial%20photography%2C%20portrait%20crop"
+        alt="Coffee shop interior"
+        class="w-full h-full object-cover"
+      />
+      <!-- Gradient overlay blending into white on the left -->
+      <div class="absolute inset-0" style="background: linear-gradient(to right, #ffffff 0%, transparent 28%);"></div>
+      <!-- Top amber accent bar -->
+      <div class="absolute top-0 left-0 right-0 h-1 bg-amber-500"></div>
+    </div>
+
+  </div>
+</section>
