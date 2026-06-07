@@ -1,0 +1,101 @@
+<style>
+  .mode-landscape .sl-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mode-portrait .sl-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="inline-block text-xs font-semibold tracking-widest uppercase text-amber-600 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-3">Platform Capabilities</span>
+      <h2 class="text-4xl font-black text-slate-900 leading-tight">Four Pillars, One Integrated System</h2>
+      <p class="text-slate-500 mt-2 text-base max-w-2xl">Every module is connected — a sale at the POS updates stock, adjusts your balance sheet, and contributes to your ROI — automatically.</p>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="flex gap-2 mb-6 flex-wrap">
+      <span class="inline-flex items-center gap-1.5 bg-amber-600 text-white text-xs font-semibold rounded-full px-3.5 py-1.5">
+        <span class="w-2 h-2 rounded-full bg-amber-200 inline-block"></span> Shop Owner
+      </span>
+      <span class="inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 text-xs font-semibold rounded-full px-3.5 py-1.5">
+        <span class="w-2 h-2 rounded-full bg-slate-300 inline-block"></span> Barista / Staff
+      </span>
+      <span class="inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 text-xs font-semibold rounded-full px-3.5 py-1.5">
+        <span class="w-2 h-2 rounded-full bg-slate-300 inline-block"></span> Cashier
+      </span>
+      <span class="inline-flex items-center gap-1.5 bg-slate-100 text-slate-600 text-xs font-semibold rounded-full px-3.5 py-1.5">
+        <span class="w-2 h-2 rounded-full bg-slate-300 inline-block"></span> Manager
+      </span>
+    </div>
+
+    <!-- Feature card grid -->
+    <div class="sl-grid grid gap-5 flex-1">
+
+      <!-- ROI Tracking -->
+      <div class="flex flex-col gap-3 bg-amber-50 border border-amber-200 rounded-2xl p-5">
+        <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-slate-900 mb-1">ROI Tracking</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Real-time return-on-investment per menu item, per day, and across your entire shop — tied live to your balance sheet.</p>
+        </div>
+        <div class="mt-auto flex flex-wrap gap-1.5">
+          <span class="text-xs bg-amber-100 text-amber-700 rounded-full px-2.5 py-0.5 font-medium">Live P&amp;L</span>
+          <span class="text-xs bg-amber-100 text-amber-700 rounded-full px-2.5 py-0.5 font-medium">Product Margins</span>
+        </div>
+      </div>
+
+      <!-- Stock Control -->
+      <div class="flex flex-col gap-3 bg-slate-800 border border-slate-700 rounded-2xl p-5">
+        <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-white mb-1">Stock Control</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">Ingredient-level inventory that decrements automatically with every order. Low-stock alerts keep you ahead of shortages.</p>
+        </div>
+        <div class="mt-auto flex flex-wrap gap-1.5">
+          <span class="text-xs bg-slate-700 text-amber-300 rounded-full px-2.5 py-0.5 font-medium">Auto-deduct</span>
+          <span class="text-xs bg-slate-700 text-amber-300 rounded-full px-2.5 py-0.5 font-medium">Low-stock Alerts</span>
+        </div>
+      </div>
+
+      <!-- Employee Management -->
+      <div class="flex flex-col gap-3 bg-amber-50 border border-amber-200 rounded-2xl p-5">
+        <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-slate-900 mb-1">Employee &amp; Barista Management</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Shift scheduling, attendance tracking, and labour-cost visibility for every barista and staff member on your team.</p>
+        </div>
+        <div class="mt-auto flex flex-wrap gap-1.5">
+          <span class="text-xs bg-amber-100 text-amber-700 rounded-full px-2.5 py-0.5 font-medium">Shift Scheduling</span>
+          <span class="text-xs bg-amber-100 text-amber-700 rounded-full px-2.5 py-0.5 font-medium">Labour Costs</span>
+        </div>
+      </div>
+
+      <!-- POS Cashier -->
+      <div class="flex flex-col gap-3 bg-slate-800 border border-slate-700 rounded-2xl p-5">
+        <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-white mb-1">Cashier POS</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">Fast, intuitive point-of-sale that syncs every transaction to stock and financials in real time — no manual entry required.</p>
+        </div>
+        <div class="mt-auto flex flex-wrap gap-1.5">
+          <span class="text-xs bg-slate-700 text-amber-300 rounded-full px-2.5 py-0.5 font-medium">Real-time Sync</span>
+          <span class="text-xs bg-slate-700 text-amber-300 rounded-full px-2.5 py-0.5 font-medium">Order Management</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
