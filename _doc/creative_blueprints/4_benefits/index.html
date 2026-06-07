@@ -1,0 +1,73 @@
+<style>
+  .mode-landscape .sl-metrics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mode-portrait .sl-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mode-landscape .sl-roi-block {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .mode-portrait .sl-roi-block {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-7">
+      <span class="inline-block text-xs font-semibold tracking-widest uppercase text-amber-600 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-3">Measurable Outcomes</span>
+      <h2 class="text-4xl font-black text-slate-900 leading-tight">What You Gain with<br>Full Integration</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-metrics-grid grid gap-4 mb-5">
+
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+        <p class="text-xs font-semibold text-amber-600 uppercase tracking-widest mb-2">Financial Clarity</p>
+        <p class="text-3xl font-black text-slate-900 mb-1">Real-time</p>
+        <p class="text-sm text-slate-500">Balance sheet updates with every sale — not at end of month, right now.</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+        <p class="text-xs font-semibold text-amber-600 uppercase tracking-widest mb-2">Inventory Accuracy</p>
+        <p class="text-3xl font-black text-slate-900 mb-1">Zero-lag</p>
+        <p class="text-sm text-slate-500">Stock levels decrement with each POS transaction — no manual counting needed.</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+        <p class="text-xs font-semibold text-amber-600 uppercase tracking-widest mb-2">Labour Visibility</p>
+        <p class="text-3xl font-black text-slate-900 mb-1">Per-shift</p>
+        <p class="text-sm text-slate-500">Labour costs tracked per employee, per shift, and factored into your live P&amp;L.</p>
+      </div>
+
+    </div>
+
+    <!-- ROI summary block -->
+    <div class="sl-roi-block flex bg-slate-900 rounded-2xl p-6 flex-1">
+      <div class="shrink-0">
+        <div class="w-14 h-14 rounded-2xl bg-amber-500 flex items-center justify-center mb-4">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center gap-3">
+        <h3 class="text-2xl font-black text-white leading-snug">The Real ROI: Decision Speed</h3>
+        <p class="text-slate-300 text-sm leading-relaxed max-w-lg">
+          When your POS, stock, staff costs, and balance sheet all speak the same language in real time, you stop reacting and start steering. Know your profitable products, catch stock drift early, keep labour costs in line — and do all of it before the week is over, not after.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-1">
+          <span class="text-xs bg-amber-500 text-white rounded-full px-3 py-1 font-semibold">Know your best-sellers</span>
+          <span class="text-xs bg-slate-700 text-amber-300 rounded-full px-3 py-1 font-semibold">Cut waste early</span>
+          <span class="text-xs bg-slate-700 text-amber-300 rounded-full px-3 py-1 font-semibold">Optimise staffing</span>
+          <span class="text-xs bg-slate-700 text-amber-300 rounded-full px-3 py-1 font-semibold">Live financial health</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
